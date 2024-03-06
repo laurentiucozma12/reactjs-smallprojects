@@ -1,15 +1,12 @@
-function NoPage() {
+import { Link } from 'react-router-dom';
+
+function Home() {
   return (
     <>
-      <h1 className="text-3xl font-bold">Home</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum enim
-        accusamus molestiae neque quae hic blanditiis repellat veritatis nisi
-        illum fugit, quaerat a? Quidem maxime sunt aspernatur, cumque voluptatem
-        ducimus.
-      </p>
+      {/* I can some some card component for every project */}
+      <Link to="/reactjs-smallprojects/single-accordion">Accordion</Link>
     </>
   );
 }
 
-export default NoPage;
+export default Home;

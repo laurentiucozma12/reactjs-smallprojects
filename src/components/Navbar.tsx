@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { List, X } from 'phosphor-react';
+import logo from '../assets/react.svg';
 
 interface Page {
   name: string;
@@ -14,8 +15,8 @@ function Navbar() {
       route: '/reactjs-smallprojects/',
     },
     {
-      name: 'ACCORDION',
-      route: '/reactjs-smallprojects/accordion',
+      name: 'CONTACT',
+      route: '/reactjs-smallprojects/contact',
     },
   ];
 
@@ -30,9 +31,10 @@ function Navbar() {
                       2xl:px-0"
         >
           <div className="py-2 xl:py-4">
-            <div className="flex items-center font-bold sm:justify-center xl:justify-between">
+            <div className="flex items-center justify-between font-bold">
               {/* Link to Home Page */}
               <Link to="/reactjs-smallprojects/" className="flex">
+                <img className="h-6 sm:h-10" src={logo} alt="react logo" />
                 <span className="ms-1 sm:mt-0.5 sm:text-3xl">
                   ReactJs Small Projects
                 </span>
@@ -62,9 +64,9 @@ function Navbar() {
               <div className="flex">
                 <ul
                   className={`
-                              absolute left-0 z-[-1] block w-full bg-[#161616] text-base transition-all duration-0 ease-in
-                              sm:duration-500
-                              xl:static xl:z-auto xl:flex xl:bg-transparent
+                              absolute left-0 z-[-1] block w-full border-x-4 border-b-4 border-[#5e5e5e] bg-[#161616] text-base transition-all duration-0  ease-in
+                               sm:border-8 sm:duration-500
+                              xl:static xl:z-auto xl:flex xl:border-0 xl:bg-transparent
                               ${isOpen ? 'top-10 sm:top-14' : 'top-[-490px]'}
                             `}
                 >

@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Accordion from './pages/accordion/Accordion';
+import Footer from './components/Footer';
 import NoPage from './pages/NoPage';
-// import Accordion from './components/accordion/Accordion.jsx';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import SingleAccordion from './pages/accordion/SingleAccordion';
 
 function App() {
   return (
@@ -17,15 +18,20 @@ function App() {
                       2xl:px-0"
         >
           <Routes>
+            <Route path="*" element={<NoPage />} />
             <Route path="/" element={<Home />} />
             <Route path="/reactjs-smallprojects/" element={<Home />} />
             <Route
-              path="/reactjs-smallprojects/accordion"
-              element={<Accordion />}
+              path="/reactjs-smallprojects/contact"
+              element={<Contact />}
             />
-            <Route path="*" element={<NoPage />} />
+            <Route
+              path="/reactjs-smallprojects/single-accordion"
+              element={<SingleAccordion />}
+            />
           </Routes>
         </main>
+        <Footer />
       </Router>
     </>
   );
