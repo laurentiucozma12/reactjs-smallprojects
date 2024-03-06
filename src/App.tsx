@@ -5,6 +5,7 @@ import NoPage from './pages/NoPage';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import SingleAccordion from './pages/accordion/SingleAccordion';
+import MultipleAccordion from './pages/accordion/MultipleAccordion';
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
             <Route
               path="/reactjs-smallprojects/single-accordion"
               element={<SingleAccordion />}
+            />
+            <Route
+              path="/reactjs-smallprojects/multiple-accordion"
+              element={<MultipleAccordion />}
             />
           </Routes>
         </main>
