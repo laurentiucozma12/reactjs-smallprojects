@@ -1,10 +1,18 @@
-import { Link } from 'react-router-dom';
+import { Card } from '../components/Card';
 
 function Home() {
   return (
     <>
-      {/* I can some some card component for every project */}
-      <Link to="/reactjs-smallprojects/single-accordion">Accordion</Link>
+      <div className="flex flex-wrap justify-center">
+        <Card
+          name={'Single Accordion'}
+          route="/reactjs-smallprojects/single-accordion"
+        />
+        <Card
+          name={'Multiple Accordion'}
+          route="/reactjs-smallprojects/multiple-accordion"
+        />
+      </div>
     </>
   );
 }
