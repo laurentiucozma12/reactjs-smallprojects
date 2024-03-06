@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply font-Rubik;
-  }
-}
-
 #root {
   min-height: 100dvh;
   display: flex;
