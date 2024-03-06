@@ -59,6 +59,18 @@ npm add eslint-config-prettier@^9.1.0
 }
 ```
 
+### Add Router
+
+```
+npm install react-router-dom
+```
+
+### Icons - Phosphor React
+
+```
+npm install phosphor-react --save-dev
+```
+
 ## Resources
 
 - [Build 25 React Projects – Tutorial](https://www.youtube.com/watch?v=5ZdHfJVAY-s)
