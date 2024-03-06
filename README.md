@@ -1,30 +1,64 @@
-# React + TypeScript + Vite
+# <img src="https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" alt="react" width="30" height="30"/> ReactJS Small Projects <img src="https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" alt="react" width="30" height="30"/>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- This project is just for learning purpose.
 
-Currently, two official plugins are available:
+## Commands
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Create React Vite App (with Typescript + SWC)
 
-## Expanding the ESLint configuration
+```
+npm create vite@latest
+```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Add Tailwind:
 
-- Configure the top-level `parserOptions` property like this:
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
 
-```js
+- Configure Tailwind:
+
+```
+/** @type {import('tailwindcss').Config} */
 export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
   },
+  plugins: [],
 }
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Add in index.css:
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+### Add Prettier
+
+- Add Prettier:
+
+```
+npm add --include=dev prettier prettier-plugin-tailwindcss
+npm add eslint-config-prettier@^9.1.0
+```
+
+- Format .prettierrc.json:
+
+```
+{
+    "singleQuote": true,
+    "plugins": ["prettier-plugin-tailwindcss"]
+}
+```
+
+## Resources
+
+- [Build 25 React Projects – Tutorial](https://www.youtube.com/watch?v=5ZdHfJVAY-s)
