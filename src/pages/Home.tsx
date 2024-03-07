@@ -6,11 +6,7 @@ export const Home = () => {
       <div className="flex flex-wrap justify-center">
         <Card
           name={'Single Accordion'}
-          route="/reactjs-smallprojects/single-accordion"
-        />
-        <Card
-          name={'Multiple Accordion'}
-          route="/reactjs-smallprojects/multiple-accordion"
+          route="/reactjs-smallprojects/accordion"
         />
       </div>
     </>
