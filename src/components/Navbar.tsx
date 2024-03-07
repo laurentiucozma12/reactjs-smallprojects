@@ -73,13 +73,13 @@ export const Navbar = () => {
                   {pages.map((page, index) => (
                     <li
                       key={page.name}
-                      className=" py-1 text-center text-[#5ed7ec] duration-700 hover:bg-[#1f1f1f] hover:text-white sm:py-4
+                      className=" py-1 text-center text-[#00D8FF] duration-700 hover:bg-[#1f1f1f] hover:text-white sm:py-4
                                   xl:my-0
                                   xl:py-0 xl:pt-0.5 xl:hover:bg-transparent"
                     >
                       <Link
                         to={page.route}
-                        className={`px-14 py-1 sm:px-60
+                        className={`block min-w-full py-1 sm:px-60
                                     sm:py-[18px] sm:text-xl md:px-80
                                     xl:px-4 xl:text-base ${index === pages.length - 1 ? 'xl:pe-0' : ''}`}
                       >
