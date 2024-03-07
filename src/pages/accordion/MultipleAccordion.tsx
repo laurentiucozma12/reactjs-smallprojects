@@ -1,11 +1,9 @@
 import './accordion.css';
 
-function MultipleAccordion() {
+export const MultipleAccordion = () => {
   return (
     <>
       <div className="accordian">No data yet</div>
     </>
   );
-}
-
-export default MultipleAccordion;
+};

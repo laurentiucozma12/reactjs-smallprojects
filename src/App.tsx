@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import NoPage from './pages/NoPage';
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import SingleAccordion from './pages/accordion/SingleAccordion';
-import MultipleAccordion from './pages/accordion/MultipleAccordion';
+import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
+import { NoPage } from './pages/NoPage';
+import { Home } from './pages/Home';
+import { Contact } from './pages/Contact';
+import { SingleAccordion } from './pages/accordion/SingleAccordion';
+import { MultipleAccordion } from './pages/accordion/MultipleAccordion';
 
 function App() {
   return (

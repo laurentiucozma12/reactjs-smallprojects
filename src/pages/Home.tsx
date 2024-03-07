@@ -1,6 +1,6 @@
 import { Card } from '../components/Card';
 
-function Home() {
+export const Home = () => {
   return (
     <>
       <div className="flex flex-wrap justify-center">
@@ -15,6 +15,4 @@ function Home() {
       </div>
     </>
   );
-}
-
-export default Home;
+};

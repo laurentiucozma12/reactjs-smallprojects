@@ -8,7 +8,7 @@ interface Page {
   route: string;
 }
 
-function Navbar() {
+export const Navbar = () => {
   const pages: Page[] = [
     {
       name: 'HOME',
@@ -95,6 +95,4 @@ function Navbar() {
       </nav>
     </>
   );
-}
-
-export default Navbar;
+};

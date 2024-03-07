@@ -8,7 +8,7 @@ interface DataItem {
   answer: string;
 }
 
-function SingleAccordion() {
+export const SingleAccordion = () => {
   const [selected, setSelected] = useState<number | null>(null);
 
   function handleSingleSelection(getCurrentId: number) {
@@ -43,6 +43,4 @@ function SingleAccordion() {
       </div>
     </>
   );
-}
-
-export default SingleAccordion;
+};
