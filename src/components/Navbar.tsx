@@ -42,7 +42,7 @@ export const Navbar = () => {
               {/* Mobile Menu */}
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className=" absolute right-2 top-1.5 block cursor-pointer p-1
+                className=" absolute right-5 top-1.5 block cursor-pointer p-1
                             sm:right-4 sm:top-2 
                             xl:hidden"
               >
@@ -67,7 +67,7 @@ export const Navbar = () => {
                               absolute left-0 z-[-1] block w-full border-x-4 border-b-4 border-[#5e5e5e] bg-[#161616] text-base transition-all duration-0  ease-in
                                sm:border-8 sm:duration-500
                               xl:static xl:z-auto xl:flex xl:border-0 xl:bg-transparent
-                              ${isOpen ? 'top-10 sm:top-14' : 'top-[-490px]'}
+                              ${isOpen ? 'top-10 sm:top-14' : 'top-[-1000px]'}
                             `}
                 >
                   {pages.map((page, index) => (
