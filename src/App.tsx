@@ -14,8 +14,8 @@ function App() {
         <Navbar />
         <main
           className=" mx-auto mt-[40px] max-w-7xl px-6 py-2
-                      sm:mt-[54px]
-                      xl:mt-[70px] 
+                      sm:mt-[56px]
+                      xl:mt-[72px] 
                       2xl:px-0"
         >
           <Routes>

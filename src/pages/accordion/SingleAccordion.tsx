@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import data from './data.ts';
+import { data } from './data.ts';
 import './accordion.css';
 
 interface DataItem {
@@ -14,8 +14,6 @@ export const SingleAccordion = () => {
   function handleSingleSelection(getCurrentId: number) {
     setSelected(getCurrentId === selected ? null : getCurrentId);
   }
-
-  console.log(selected);
 
   return (
     <>

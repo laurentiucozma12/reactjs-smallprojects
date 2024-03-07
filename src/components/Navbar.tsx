@@ -64,7 +64,7 @@ export const Navbar = () => {
               <div className="flex">
                 <ul
                   className={`
-                              absolute left-0 z-[-1] block w-full border-x-4 border-b-4 border-[#00D8FF] bg-[#161616] text-base transition-all duration-0  ease-in
+                              absolute left-0 z-[-1] block w-full border-x-4 border-b-4 border-[#00D8FF] bg-[#161616] text-base transition-all duration-0 ease-in
                               sm:border-8 sm:duration-500
                               xl:static xl:z-auto xl:flex xl:border-0 xl:bg-transparent
                               ${isOpen ? 'top-10 sm:top-14' : 'top-[-1000px]'}
@@ -73,15 +73,15 @@ export const Navbar = () => {
                   {pages.map((page, index) => (
                     <li
                       key={page.name}
-                      className=" py-1 text-center text-[#00D8FF] duration-700 hover:bg-[#1f1f1f] hover:text-white sm:py-4
+                      className=" text-center text-[#00D8FF] duration-700 hover:bg-[#1f1f1f] hover:text-white
                                   xl:my-0
                                   xl:py-0 xl:pt-0.5 xl:hover:bg-transparent"
                     >
                       <Link
                         to={page.route}
                         className={`block min-w-full py-1 sm:px-60
-                                    sm:py-[18px] sm:text-xl md:px-80
-                                    xl:px-4 xl:text-base ${index === pages.length - 1 ? 'xl:pe-0' : ''}`}
+                                    sm:py-3 sm:text-xl md:px-80
+                                    xl:px-4 xl:py-0 xl:text-base ${index === pages.length - 1 ? 'xl:pe-0' : ''}`}
                       >
                         {page.name}
                       </Link>
