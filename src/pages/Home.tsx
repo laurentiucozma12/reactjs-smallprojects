@@ -4,10 +4,7 @@ export const Home = () => {
   return (
     <>
       <div className="flex flex-wrap justify-center">
-        <Card
-          name={'Single Accordion'}
-          route="/reactjs-smallprojects/accordion"
-        />
+        <Card name={'Accordion'} route="/reactjs-smallprojects/accordion" />
       </div>
     </>
   );
