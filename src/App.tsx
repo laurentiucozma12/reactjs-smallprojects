@@ -5,6 +5,7 @@ import { NoPage } from './pages/NoPage';
 import { Home } from './pages/Home';
 import { Contact } from './pages/Contact';
 import { Accordion } from './pages/accordion/Accordion';
+import { RandomColor } from './pages/random-color/RandomColor';
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
             <Route
               path="/reactjs-smallprojects/accordion"
               element={<Accordion />}
+            />
+            <Route
+              path="/reactjs-smallprojects/random-color-generator"
+              element={<RandomColor />}
             />
             <Route path="*" element={<NoPage />} />
           </Routes>
