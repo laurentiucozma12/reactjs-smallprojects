@@ -36,7 +36,7 @@ function App() {
             />
             <Route
               path="/reactjs-smallprojects/star-rating"
-              element={<StarRating />}
+              element={<StarRating noOfStars={10} />}
             />
             <Route path="*" element={<NoPage />} />
           </Routes>
