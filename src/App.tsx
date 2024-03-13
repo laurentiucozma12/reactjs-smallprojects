@@ -6,6 +6,7 @@ import { Home } from './pages/Home';
 import { Contact } from './pages/Contact';
 import { Accordion } from './pages/accordion/Accordion';
 import { RandomColor } from './pages/random-color/RandomColor';
+import { StarRating } from './pages/star-rating/StarRating';
 
 function App() {
   return (
@@ -32,6 +33,10 @@ function App() {
             <Route
               path="/reactjs-smallprojects/random-color-generator"
               element={<RandomColor />}
+            />
+            <Route
+              path="/reactjs-smallprojects/star-rating"
+              element={<StarRating />}
             />
             <Route path="*" element={<NoPage />} />
           </Routes>
